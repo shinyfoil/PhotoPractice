@@ -18,5 +18,5 @@ jobs:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
-	 name: Build the shit
-	 command: ./gradlew assembleDebug
+         name: Build the shit
+         command: ./gradlew assembleDebug
