@@ -12,5 +12,7 @@ jobs:
           name: Download Dependencies
           command: ./gradlew androidDependencies
       - run:
-         name: Build the shit
-         command: gradle assemble
+          name: Build debug APK and release APK
+          command: |
+            ./gradlew :app:assembleDebug
+            ./gradlew :app:assembleDebugAndroidTest
